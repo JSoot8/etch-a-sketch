@@ -4,15 +4,35 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2B2A33;
+}
+
 .sketch-pad {
     width: 800px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 .sketch-square {
-    height: 50px;
     background-color: rgba(211, 211, 211, 0.3);
-    border: gray solid 1px;
-    flex-basis: 50px;
+    border: black solid 1px;
+    flex-basis: calc(100% / var(--grid-sides));
+}
+
+.resize-button {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: lightgray;
+    margin: 0 auto;
 }
