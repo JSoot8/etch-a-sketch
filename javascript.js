@@ -7,3 +7,11 @@ while(counter != 256) {
     sketchPad.appendChild(newSquare);
     counter++
 }
+
+sketchPad.addEventListener('mouseover', (event) => {
+    event.target.style.backgroundColor = 'rgba(211, 211, 211, 1)';
+});
+
+sketchPad.addEventListener('mouseout', (event) => {
+    event.target.style.backgroundColor = 'rgba(211, 211, 211, 0.3)';
+});
