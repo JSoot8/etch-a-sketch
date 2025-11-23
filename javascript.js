@@ -2,14 +2,6 @@ let sketchPad = document.querySelector('.sketch-pad');
 
 sketchPadGenerate(16);
 
-sketchPad.addEventListener('mouseover', (event) => {
-    event.target.style.backgroundColor = 'rgba(211, 211, 211, 1)';
-});
-
-sketchPad.addEventListener('mouseout', (event) => {
-    event.target.style.backgroundColor = 'rgba(211, 211, 211, 0.3)';
-});
-
 let resizeBtn = document.querySelector('.resize-button');
 resizeBtn.addEventListener('click', () => {
     let sideAmount = prompt('How many squares per side?');
@@ -32,6 +24,3 @@ function sketchPadGenerate (sideSize) {
         counter++
     }
 }
-
-//generate amount of squares COMPLETE
-//

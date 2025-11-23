@@ -29,6 +29,10 @@ body {
     flex-basis: calc(100% / var(--grid-sides));
 }
 
+.sketch-square:hover {
+    background-color: rgba(211, 211, 211, 1);
+}
+
 .resize-button {
     font-size: 16px;
     border-radius: 8px;
